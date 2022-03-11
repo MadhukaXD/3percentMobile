@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "3percent",
+    "slug": "3percent",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "3percent"
+}
