@@ -2,9 +2,10 @@ import HomeScreen from './HomeScreen'
 import LoginScreen from './LoginScreen'
 import OnBoarding from './OnBoarding'
 import Profile from './Profile'
-import SignIn from './SignIn'
 import Training from './Training'
 import Nutrition from './Nutrition'
+import HomeMenu from './HomeMenu'
+import SignIn from './SingIn'
 
 export {
     HomeScreen,
@@ -12,6 +13,7 @@ export {
     OnBoarding,
     Profile,
     Training,
-    SignIn,
-    Nutrition
+    Nutrition,
+    HomeMenu,
+    SignIn
 }

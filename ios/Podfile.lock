@@ -9,7 +9,7 @@ PODS:
     - ExpoModulesCore
   - EXFileSystem (13.0.3):
     - ExpoModulesCore
-  - EXFont (10.0.3):
+  - EXFont (10.0.5):
     - ExpoModulesCore
   - EXJSONUtils (0.2.0)
   - EXKeepAwake (10.0.0):
@@ -500,7 +500,7 @@ SPEC CHECKSUMS:
   EXApplication: 0e15240e4d125b62f1cae48759ffbbd32b9286a6
   EXConstants: 6d585d93723b18d7a8c283591a335609e3bc153e
   EXFileSystem: 99aac7962c11c680681819dd9cbca24e20e5b1e7
-  EXFont: 2e1c6fe726d008a039db80df95f48b4921b7fe59
+  EXFont: 2597c10ac85a69d348d44d7873eccf5a7576ef5e
   EXJSONUtils: f515cf71710855d7ba5bfc6752af3b9a6f6aad01
   EXKeepAwake: 8aa32396a5972d26e75e538603aad0f032396503
   EXLinearGradient: 4d727eacb53d19ef25b02dd810e0199b453489ce

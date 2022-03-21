@@ -130,9 +130,12 @@ const Onboarding = () => {
                         }}
                     >
                         <TextButton
-                            label="skip"
+                            label="Skip"
                             buttonContainerStyle={{
-                                backgroundColor: null,
+                                height: 60,
+                                width: 150,
+                                borderRadius: SIZES.radius,
+                                backgroundColor: COLORS.lightGray,
                             }}
                             labelStyle={{
                                 color: COLORS.darkGray2
@@ -144,7 +147,7 @@ const Onboarding = () => {
                             label="Next"
                             buttonContainerStyle={{
                                 height: 60,
-                                width: 200,
+                                width: 150,
                                 borderRadius: SIZES.radius
                             }}
                             onPress={() => {
@@ -253,8 +256,8 @@ const Onboarding = () => {
                                 <Text
                                     style={{
                                         fontSize: 29,
-                                        fontWeight: "bold"
-
+                                        fontWeight: "bold",
+                                        ...FONTS.h1
                                     }}
                                 >
                                     {item.title}
@@ -265,8 +268,7 @@ const Onboarding = () => {
                                         textAlign: 'center',
                                         color: COLORS.darkGray,
                                         paddingHorizontal: SIZES.padding,
-
-
+                                        ...FONTS.body3
                                     }}
                                 >
                                     {item.description}

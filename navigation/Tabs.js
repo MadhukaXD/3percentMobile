@@ -7,37 +7,30 @@ import {
     StyleSheet
 } from "react-native";
 
-
-
 import { createBottomTabNavigator, BottomTabBar } from '@react-navigation/bottom-tabs';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import { HomeScreen, Profile, Training, Nutrition } from "../screens";
+import { HomeScreen, Profile, Training, Nutrition, HomeMenu } from "../screens";
 import { COLORS, FONTS, icons } from "../constants";
 
 const Tab = createBottomTabNavigator();
 
 
-
 const Tabs = () => {
     return (
         <Tab.Navigator
-            tabBarOptions={{
-                showLabel: false,
-                style: {
-                    position: 'absolute',
-                    bottom: '0',
-                    left: '0',
-                    right: '0',
-                    elevation: '0',
-                    backgroundColor: COLORS.white,
-                    borderTopColor: "transparent",
-                    height: 100
-                }
+            screenOptions={{
+                "tabBarShowLabel": false,
+                "tabBarStyle": [
+                    {
+                        "display": "flex"
+                    },
+                    null
+                ]
             }}
         >
             <Tab.Screen
-                name="Home"
+                name="HomeScreen"
                 component={HomeScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
@@ -62,7 +55,7 @@ const Tabs = () => {
                                     color: focused ? COLORS.primary : COLORS.black,
                                     fontSize: 12,
                                 }}
-                            >HOME</Text>
+                            >HomeScreen</Text>
                         </View>
                     )
                 }}
@@ -93,14 +86,14 @@ const Tabs = () => {
                                     color: focused ? COLORS.primary : COLORS.black,
                                     fontSize: 12
                                 }}
-                            >NUTRITION</Text>
+                            >Nutrition</Text>
                         </View>
                     )
                 }}
             />
             <Tab.Screen
-                name="HomeScreen"
-                component={HomeScreen}
+                name="HomeMenu"
+                component={HomeMenu}
             />
             <Tab.Screen
                 name="Training"
@@ -128,7 +121,7 @@ const Tabs = () => {
                                     color: focused ? COLORS.primary : COLORS.black,
                                     fontSize: 12
                                 }}
-                            >TRAINING</Text>
+                            >Training</Text>
                         </View>
                     )
                 }}
@@ -159,7 +152,7 @@ const Tabs = () => {
                                     color: focused ? COLORS.primary : COLORS.black,
                                     fontSize: 12
                                 }}
-                            >PROFILE</Text>
+                            >Profile</Text>
                         </View>
                     )
                 }}
