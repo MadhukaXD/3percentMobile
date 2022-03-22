@@ -5,6 +5,10 @@ import {
     Text
 } from 'react-native'
 
+import { WelcomeHeader } from "../components";
+
+import { constants, images, SIZES, COLORS, FONTS } from "../constants";
+
 const HomeMenu = () => {
 
     const navigation = useNavigation();
@@ -17,7 +21,13 @@ const HomeMenu = () => {
 
     return (
         <View>
-            <Text>I am HomeMnu</Text>
+            <View
+                style={{
+                    marginTop: 19
+                }}
+            >
+                <WelcomeHeader />
+            </View>
         </View>
     )
 }

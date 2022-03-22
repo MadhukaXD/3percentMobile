@@ -5,6 +5,10 @@ import {
     Text
 } from 'react-native'
 
+import { WelcomeHeader } from "../components";
+
+import { constants, images, SIZES, COLORS, FONTS } from "../constants";
+
 const Nutrition = () => {
 
     const navigation = useNavigation();
@@ -17,7 +21,13 @@ const Nutrition = () => {
 
     return (
         <View>
-            <Text>I am Nutrition</Text>
+            <View
+                style={{
+                    marginTop: 19
+                }}
+            >
+                <WelcomeHeader />
+            </View>
         </View>
     )
 }

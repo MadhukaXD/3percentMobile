@@ -141,7 +141,7 @@ const SignIn = () => {
                         borderRadius: SIZES.radius,
                         backgroundColor: COLORS.primary
                     }}
-                    onPress={() => navigation.replace("Home")}
+                    onPress={() => navigation.replace("OnBoarding")}
                 />
 
 

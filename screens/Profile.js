@@ -5,6 +5,10 @@ import {
     Text
 } from 'react-native'
 
+import { WelcomeHeader } from "../components";
+
+import { constants, images, SIZES, COLORS, FONTS } from "../constants";
+
 const Profile = () => {
 
     const navigation = useNavigation();
@@ -17,7 +21,7 @@ const Profile = () => {
 
     return (
         <View>
-            <Text>I am Profile</Text>
+
         </View>
     )
 }

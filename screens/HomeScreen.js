@@ -7,6 +7,10 @@ import {
     StyleSheet
 } from 'react-native'
 
+import { WelcomeHeader } from "../components";
+
+import { constants, images, SIZES, COLORS, FONTS } from "../constants";
+
 const HomeScreen = () => {
 
     const navigation = useNavigation();
@@ -18,10 +22,14 @@ const HomeScreen = () => {
     }, []);
 
     return (
-        <View
-
-        >
-            <Text>Home Screen</Text>
+        <View>
+            <View
+                style={{
+                    marginTop: 19
+                }}
+            >
+                <WelcomeHeader />
+            </View>
         </View>
     )
 }
