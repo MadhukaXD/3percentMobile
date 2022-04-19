@@ -5,11 +5,11 @@ import {
     Text
 } from 'react-native'
 
-import { WelcomeHeader } from "../components";
+import { WelcomeHeader, TextButton } from "../components";
 
 import { constants, images, SIZES, COLORS, FONTS } from "../constants";
 
-const Nutrition = () => {
+const AddImages = () => {
 
     const navigation = useNavigation();
 
@@ -23,7 +23,7 @@ const Nutrition = () => {
         <View>
             <View
                 style={{
-                    marginTop: 19
+                    marginTop: 5
                 }}
             >
                 <WelcomeHeader />
@@ -34,11 +34,26 @@ const Nutrition = () => {
                         marginLeft: SIZES.padding
                     }}
                 >
-                    Nutrition
+                    Add Images
                 </Text>
+
+
+                <TextButton
+                    label="Add Photos"
+                    buttonContainerStyle={{
+                        height: 55,
+                        marginHorizontal: SIZES.padding,
+                        alignItems: 'center',
+                        marginTop: SIZES.padding * 7,
+                        borderRadius: SIZES.radius,
+                        backgroundColor: COLORS.primary
+                    }}
+                    onPress={() => navigation.replace("OnBoarding")}
+                />
+
             </View>
         </View>
     )
 }
 
-export default Nutrition
+export default AddImages

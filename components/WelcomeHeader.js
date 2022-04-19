@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
+import { useNavigation } from '@react-navigation/core'
 import {
     View,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    Image
 } from 'react-native'
-import { FONTS, COLORS, SIZES } from '../constants'
+import { FONTS, COLORS, SIZES, images } from '../constants';
 
 
-const WelcomeHeader = ({ }) => {
+const WelcomeHeader = ({ onPress }) => {
+
+    const navigation = useNavigation();
+
+    useLayoutEffect(() => {
+        navigation.setOptions({
+            headerShown: false,
+        });
+    }, []);
+
     return (
         <View
             style={{
@@ -28,7 +39,7 @@ const WelcomeHeader = ({ }) => {
                     style={{
                         ...FONTS.h2
                     }}
-                >Welcome to the3percent</Text>
+                >Welcome!!</Text>
                 <Text
                     style={{
                         color: COLORS.darkGray2,
@@ -37,7 +48,18 @@ const WelcomeHeader = ({ }) => {
                 >John Doe</Text>
             </View>
             {/* Avatar */}
-
+            <TouchableOpacity>
+                <Image
+                    source={images.profileimage}
+                    resizeMode="contain"
+                    style={{
+                        width: 60,
+                        height: 60,
+                        borderRadius: SIZES.padding,
+                    }}
+                    onPress={() => navigation.navigate("Profile")}
+                />
+            </TouchableOpacity>
         </View>
     )
 }

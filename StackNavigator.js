@@ -11,6 +11,9 @@ import HomeMenu from './screens/HomeMenu';
 import SignIn from './screens/SingIn';
 import ForgotPassword from './screens/ForgotPassword';
 import Otp from './screens/Otp';
+import AddImages from './screens/AddImages';
+import AddBodyFacts from './screens/AddBodyFacts';
+import Goals from './screens/Goals';
 
 import Tabs from "./navigation/Tabs"
 
@@ -38,6 +41,9 @@ const StackNavigator = () => {
                     <Stack.Screen name="Training" component={Training} />
                     <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
                     <Stack.Screen name="Otp" component={Otp} />
+                    <Stack.Screen name="AddImages" component={AddImages} />
+                    <Stack.Screen name="AddBodyFacts" component={AddBodyFacts} />
+                    <Stack.Screen name="Goals" component={Goals} />
                 </>
             ) : (
                 <Stack.Screen name="Login" component={LoginScreen} />

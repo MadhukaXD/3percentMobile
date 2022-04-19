@@ -27,6 +27,15 @@ const Training = () => {
                 }}
             >
                 <WelcomeHeader />
+                <Text
+                    style={{
+                        ...FONTS.h2,
+                        marginTop: SIZES.padding,
+                        marginLeft: SIZES.padding
+                    }}
+                >
+                    Training
+                </Text>
             </View>
         </View>
     )

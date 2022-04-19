@@ -7,9 +7,11 @@ import {
 
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
-import { images, FONTS, SIZES, COLORS } from "../constants";
+import { WelcomeHeader, CategoryCard, VerticalImageCard } from "../components";
 
-const AuthLayout = ({ title, subtitle, titleContainerStyle, children }
+import { constants, images, SIZES, COLORS, FONTS, dummydata } from "../constants";
+
+const AuthLayout2 = ({ title, subtitle, titleContainerStyle, children }
 ) => {
     return (
         <View
@@ -27,21 +29,7 @@ const AuthLayout = ({ title, subtitle, titleContainerStyle, children }
                 }}
             >
                 {/* App Icon */}
-                <View
-                    style={{
-                        alignItems: "center"
-                    }}
-                >
-                    <Image
-                        source={images.logo2}
-                        resizeMode="contain"
-                        style={{
-                            marginTop: -80,
-                            height: 300,
-                            width: SIZES.width * 0.9
-                        }}
-                    />
-                </View>
+                <WelcomeHeader />
 
                 {/* title */}
                 <View
@@ -76,4 +64,4 @@ const AuthLayout = ({ title, subtitle, titleContainerStyle, children }
     )
 }
 
-export default AuthLayout;
+export default AuthLayout2;

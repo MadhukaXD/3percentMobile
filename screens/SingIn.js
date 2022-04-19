@@ -137,11 +137,11 @@ const SignIn = () => {
                     buttonContainerStyle={{
                         height: 55,
                         alignItems: 'center',
-                        marginTop: SIZES.padding * 4,
+                        marginTop: SIZES.padding * 6,
                         borderRadius: SIZES.radius,
                         backgroundColor: COLORS.primary
                     }}
-                    onPress={() => navigation.replace("OnBoarding")}
+                    onPress={() => navigation.replace("AddBodyFacts")}
                 />
 
 

@@ -9,7 +9,7 @@ import { WelcomeHeader } from "../components";
 
 import { constants, images, SIZES, COLORS, FONTS } from "../constants";
 
-const Nutrition = () => {
+const Goals = () => {
 
     const navigation = useNavigation();
 
@@ -34,11 +34,11 @@ const Nutrition = () => {
                         marginLeft: SIZES.padding
                     }}
                 >
-                    Nutrition
+                    Add Images
                 </Text>
             </View>
         </View>
     )
 }
 
-export default Nutrition
+export default Goals
